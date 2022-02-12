@@ -7,11 +7,12 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to the <%= title %></p>
+    <a href="/new">Add a message>></a>
       <div class="message-board">
         <% for(let i=0; i<messages.length; i++) { %>
             <div class="message">
                 <p><%= messages[i].text %></p>
-                <p>-<%=messages[i].user %> at <% messages[i].added %></p>
+                <p><span class="user">-<%=messages[i].user %> </span><span class="date"> <%=messages[i].added.toDateString() %></span></p>
             </div>
         <% } %>
       </div>
