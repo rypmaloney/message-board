@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+//IMPORT ROUTES
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const newRouter = require('./routes/new');
@@ -20,6 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// SET UP ROUTER
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/new', newRouter);

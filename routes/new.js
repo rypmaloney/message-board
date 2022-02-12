@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* can get '/' and not '/new' because the path is declared in APP.js*/
 router.get('/', function(req, res, next) {
     res.render('form', { title: 'Message Board'});
 });
