@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+.message-board {
+  display: flex;
+  flex-direction: column;
+}
+.message{
+  border:2px solid rgba(71, 69, 69, 0.274);
+  margin: 1em;
+  width: 20em;
+  border-radius: 2px;
+  box-shadow: 2px 1px 2px gainsboro;
+  padding: 1em;
+}
